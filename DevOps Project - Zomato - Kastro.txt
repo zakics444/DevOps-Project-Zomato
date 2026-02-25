@@ -540,13 +540,13 @@ These add-ons will create the respective IAM policies for us automatically withi
 eksctl create nodegroup --cluster=zaki-cluster \
                        --region=us-east-1 \
                        --name=kastrodemo-ng-public1 \
-                       --node-type=t3.medium \
+                       --node-type=t3.small\
                        --nodes=2 \
                        --nodes-min=2 \
                        --nodes-max=4 \
                        --node-volume-size=20 \
                        --ssh-access \
-                       --ssh-public-key=Prajwal \
+                       --ssh-public-key=myUSkey \
                        --managed \
                        --asg-access \
                        --external-dns-access \
@@ -713,6 +713,7 @@ Kind Request:
 Once after you have successfully deployed the App, kindly share your experience on LinkedIn by Tagging me and also provide the YouTube link of this project in your post, as it helps others to access the video quickly. 
 ========================================================================================================
 												HAPPY LEARNING
+
 
 
 
